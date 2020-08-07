@@ -1,0 +1,11 @@
+[net]
+git-fetch-with-cli = true
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+
+# [target.arm-unknown-linux-gnueabihf]
+# linker = "$HOME/build-rpi/tools/arm-bcm2708/arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc"
